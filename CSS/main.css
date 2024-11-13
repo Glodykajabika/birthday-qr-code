@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.title {
+    text-align: center;
+    padding: 2rem 0 0;
+    color: bisque;
+}
+
+.section-notes {
+    /* height: 100vh; */
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 0 2rem;
+    gap: 10px;   
+    max-width: 95vw;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    align-self: center;
+}
+
+.note {
+    min-width: 95%;
+    background-color: bisque;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: .5rem;
+    scroll-snap-align: start;
+    /* width: 100%; */
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-weight: 900;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    border: none;
+    color: bisque;
+    background: linear-gradient(
+        rgba(0, 0, 0, .9), 
+        rgba(0, 0, 0, .9)
+    ); 
+    background-color: transparent;
+    /* filter: blur(.1rem); */
+    cursor: pointer;
+    z-index: 1;
+}
+
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+    background-color: transparent;
+}
+.right {
+    right: 0;
+}
+
+.left {
+    left: 0;
+}
